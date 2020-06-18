@@ -1,0 +1,10 @@
+dataway测试项目
+一个完全只需要配置就能实现简单的CURD功能的一个工具，比较深入的还是需要dataql语言实现，可以多了解下
+
+参考链接：
+文章细节有问题，还是看官网好点，https://mp.weixin.qq.com/s/to9XP13e3hA6dqB9gYsApA
+https://www.hasor.net/web/dataway/about.html
+dataql的使用：https://www.hasor.net/web/dataql/fragment/sql/about_mybatis.html
+
+项目启动之后，登陆链接地址为：
+http://127.0.0.1:8080/interface-ui/#/
