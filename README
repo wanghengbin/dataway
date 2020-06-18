@@ -8,3 +8,18 @@ dataql的使用：https://www.hasor.net/web/dataql/fragment/sql/about_mybatis.ht
 
 项目启动之后，登陆链接地址为：
 http://127.0.0.1:8080/interface-ui/#/
+
+测试例子1：
+sql：insert into test1 (api_method) values ( #{api_method});
+Parameters：{"api_method":"get"}
+
+测试例子2：
+dataQL：// 声明一个 SQL
+       var dataSet = @@sql(itemCode) <%
+           select * from test1 where api_method = #{itemCode} limit 10;
+       %>
+       // 执行这个 SQL，并返回结果
+       return dataSet(${itemCode});
+Parameters：{"itemCode":"get"}
+
+更多例子还是参考：dataql的使用：https://www.hasor.net/web/dataql/fragment/sql/about_mybatis.html
